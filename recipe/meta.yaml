@@ -10,7 +10,7 @@ source:
   sha256: 3a872ae60f00665c7b77b5d3727b1f9e5edaf33fe96024abb3289cee917e11d6
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -29,9 +29,8 @@ test:
     - antsRegistration --help
 
 about:
-  home: http://stnava.github.io/ANTs/
-  license: BSD-3-Clause
-  license_family: BSD
+  home: https://stnava.github.io/ANTs/
+  license: Apache-2.0
   license_file: COPYING.txt
   summary: >
     ANTs computes high-dimensional mappings to capture the statistics of brain structure and function
