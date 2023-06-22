@@ -3,12 +3,11 @@ About ants-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ants-feedstock/blob/main/LICENSE.txt)
 
-Home: http://stnava.github.io/ANTs/
+Home: https://stnava.github.io/ANTs/
 
-Package license: BSD-3-Clause
+Package license: Apache-2.0
 
 Summary: ANTs computes high-dimensional mappings to capture the statistics of brain structure and function
-
 
 Development: https://github.com/ANTsX/ANTs/wiki
 
