@@ -22,10 +22,12 @@ cmake -G Ninja \
     ${SRC_DIR}
 
 # Build
-cmake --build . --config Release --parallel ${CPU_COUNT}
-
-# Test
-ctest -C Release --output-on-failure
+cmake --build . --parallel ${CPU_COUNT}
 
 # Install
-cmake --build . --config Release --target install
+cmake --build . --parallel ${CPU_COUNT} --target install
+
+# Test
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" ]]; then
+ctest --parallel ${CPU_COUNT} --extra-verbose --output-on-failure
+fi
